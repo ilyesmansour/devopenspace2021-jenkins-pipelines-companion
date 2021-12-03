@@ -1,4 +1,7 @@
 pipeline {
+    environment{
+        CI_SERVER = "Jenkins"
+    }
     agent {
         docker {
             image 'maven:3.8.4-jdk-11'
